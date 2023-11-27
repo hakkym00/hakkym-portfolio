@@ -64,10 +64,10 @@ const About = () => {
           <TextBox>
             Hello 👋! I’m Ade-Ajayi Akeem, Full Stack Developer with 3+ years of
             experience in all stages of the development cycle for dynamic web
-            projects in Point of Sale, E-Commerce and Financial Services. Have
+            projects in Point of Sale, E-Commerce and Financial Services. Having
             in-depth knowledge in advanced NodeJS, ReactJS, ExpressJS, MongoDB,
             HTML5, CSS3, JavaScript, ES6, Bootstrap, Material UI, Restful API
-            and Services.
+            and other Services.
           </TextBox>
           <TextBox>
             I am a motivated individual who likes to learn new things and is a

@@ -24,7 +24,7 @@ a{
 
 
 :root {
-  --btn-color: #FF7878;
+  --btn-color: #00abe4;
   --white: #FFf;
 }
 

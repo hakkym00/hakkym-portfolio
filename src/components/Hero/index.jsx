@@ -5,6 +5,14 @@ import bg from "../../assets/bghero.jpg";
 import { MdEmail } from "react-icons/md";
 import { GrLocationPin } from "react-icons/gr";
 import { AiOutlineGithub } from "react-icons/ai";
+import FileSaver from "file-saver";
+
+const saveFile = () => {
+  FileSaver.saveAs(
+    `${process.env.REACT_APP_CLIENT_URL}/assets/cv.pdf`,
+    "ADE-AJAYI_AKEEM_RESUME.pdf"
+  );
+};
 
 const Background = styled.div`
   top: 0;
@@ -169,6 +177,11 @@ const Hero = () => {
 
           <Bottom>
             <ContactButton href="#contact">contact</ContactButton>
+          </Bottom>
+          <br />
+          <br />
+          <Bottom>
+            <ContactButton onClick={saveFile}>Download Resume</ContactButton>
           </Bottom>
         </Inner>
       </Background>

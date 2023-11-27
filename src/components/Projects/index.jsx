@@ -10,6 +10,7 @@ import ss5 from "../../assets/ss5.png";
 import ss6 from "../../assets/ss6.png";
 import ss7 from "../../assets/ss7.png";
 import ss8 from "../../assets/ss8.png";
+import ss9 from "../../assets/ss9.png";
 import styled from "styled-components";
 
 const Top = styled.div`
@@ -54,6 +55,7 @@ const TextDesc = styled.div`
 `;
 
 const SingleProduct = styled.div`
+  position: relative;
   height: 40vh;
   margin: 20px 10px;
   border: 2px solid rgb(243, 242, 242);
@@ -91,6 +93,19 @@ const Circle = styled.div`
   background: white;
 `;
 
+const ProjectTitle = styled.div`
+  position: absolute;
+  /* border-radius: 10px; */
+  background-color: #12121280;
+  padding: 5px;
+  width: 100%;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e8e8e8;
+  top: 35vh;
+`;
+
 const Image = styled.img`
   width: 100%;
   transition: all 5s ease;
@@ -103,14 +118,60 @@ const Projects = () => {
   const { isDark } = useContext(ThemeContext);
 
   const projects = [
-    { id: 1, img: ss1, link: "https://ecommerce-sanity-three.vercel.app/" },
-    { id: 2, img: ss2, link: "https://photo-captur.vercel.app/" },
-    { id: 3, img: ss3, link: "https://ecommercestore.onrender.com/" },
-    { id: 4, img: ss4, link: "https://real-estate-rust-eight.vercel.app/" },
-    { id: 5, img: ss5, link: "https://hakkym-amazona.onrender.com/" },
-    { id: 6, img: ss6, link: "https://netflix-build-9824f.web.app/" },
-    { id: 7, img: ss7, link: "https://hakkym-store.web.app/" },
-    { id: 8, img: ss8, link: "https://airbnb-clone-b8dc4.web.app/" },
+    {
+      id: 1,
+      name: "Headphone Store",
+      img: ss1,
+      link: "https://ecommerce-sanity-three.vercel.app/",
+    },
+    {
+      id: 2,
+      name: "Photography Portfolio",
+      img: ss2,
+      link: "https://photo-captur.vercel.app/",
+    },
+    {
+      id: 3,
+      name: "Drug Store",
+      img: ss3,
+      link: "https://ecommercestore.onrender.com/",
+    },
+    {
+      id: 4,
+      name: "Real Estate Web App",
+      img: ss4,
+      link: "https://real-estate-rust-eight.vercel.app/",
+    },
+    {
+      id: 5,
+      name: "Amazona Store",
+      img: ss5,
+      link: "https://hakkym-amazona.onrender.com/",
+    },
+    {
+      id: 6,
+      name: "Netflix Web App ",
+      img: ss6,
+      link: "https://netflix-build-9824f.web.app/",
+    },
+    {
+      id: 7,
+      name: "Simple Store",
+      img: ss7,
+      link: "https://hakkym-store.web.app/",
+    },
+    {
+      id: 8,
+      name: "Airbnb Web App",
+      img: ss8,
+      link: "https://airbnb-clone-b8dc4.web.app/",
+    },
+    {
+      id: 9,
+      name: "Alan AI news app",
+      img: ss9,
+      link: "https://alan-news-ai.web.app/",
+    },
   ];
 
   return (
@@ -141,6 +202,7 @@ const Projects = () => {
                     <Circle />
                   </TabBrowser>
                   <Image src={project.img} />
+                  <ProjectTitle>{project.name}</ProjectTitle>
                 </SingleProduct>
               </a>
             );
