@@ -56,7 +56,7 @@ const TextDesc = styled.div`
 
 const SingleProduct = styled.div`
   position: relative;
-  height: 40vh;
+  height: 248px;
   margin: 20px 10px;
   border: 2px solid rgb(243, 242, 242);
   border-radius: 10px 10px 0 0;
@@ -97,13 +97,13 @@ const ProjectTitle = styled.div`
   position: absolute;
   /* border-radius: 10px; */
   background-color: #12121280;
-  padding: 5px;
+  padding: 10px 5px;
   width: 100%;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #e8e8e8;
-  top: 35vh;
+  top: 213px;
 `;
 
 const Image = styled.img`
